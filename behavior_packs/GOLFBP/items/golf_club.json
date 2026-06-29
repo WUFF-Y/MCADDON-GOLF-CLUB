@@ -1,0 +1,46 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "golf:club",
+      "category": "equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "golf_club",
+      "minecraft:display_name": {
+        "value": "Golf Club"
+      },
+
+      "minecraft:weapon": {},
+
+      "minecraft:damage": 1,
+
+      "minecraft:durability": {
+        "max_durability": 9999
+      },
+
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "entity_attack",
+            "deals_damage": true,
+            "on_damage": {
+              "event": "golf:knockback"
+            }
+          }
+        ]
+      }
+    },
+
+    "events": {
+      "golf:knockback": {
+        "run_command": {
+          "command": [
+            "execute as @e[r=3,type=!player] run tp @s ^ ^0.3 ^7"
+          ]
+        }
+      }
+    }
+  }
+}
