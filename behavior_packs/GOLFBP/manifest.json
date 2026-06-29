@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Golf BP",
+    "description": "Golf club knockback behavior pack",
+    "uuid": "2c1b5d0e-7a9a-4b2c-9c2b-111111111111",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "8f3c2a11-6c77-4a6f-9a9d-222222222222",
+      "version": [1, 0, 0]
+    }
+  ]
+}
